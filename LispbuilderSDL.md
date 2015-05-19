@@ -11,7 +11,6 @@
   * [Community](Community)
   * [License](License)
   * [Contributors](Contributors)
-  * [FAQ](Faq)
 
 # About #
 
