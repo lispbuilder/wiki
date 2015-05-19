@@ -1,4 +1,17 @@
+# Table of Contents #
 
+  * [Download & Installation](DownloadInstallationIntro)
+    * [Windows](WindowsInstallation)
+    * [OS X, Linux, and BSD](DownloadInstallation)
+  * [Screenshots](Screenshots)
+  * Documentation
+    * [User Guide](UsingLispbuilderSDL)
+    * [API Reference Manual](https://lispbuilder.github.io/documentation/lispbuilder-sdl.html#contents)
+    * [How-To's](HowTos)
+  * [Community](Community)
+  * [License](License)
+  * [Contributors](Contributors)
+  * [FAQ](Faq)
 
 # About #
 
@@ -24,4 +37,4 @@ In addition, it is possible to [create standalone executables](UsingLispbuilderS
       (:video-expose-event () (sdl:update-display))))
 ```
 
-![https://lispbuilder.github.io/documentation/lispbuilder-sdl/documentation/sdl-alien.png](https://lispbuilder.github.io/documentation/lispbuilder-sdl/documentation/sdl-alien.png)
+![https://lispbuilder.github.io/documentation/sdl-alien.png](https://lispbuilder.github.io/documentation/sdl-alien.png)
