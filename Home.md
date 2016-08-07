@@ -1,43 +1,47 @@
+# Introduction
 
+Lispbuilder (short for Common Lisp Application Builder), is a
+collection of cross-platform packages for building large, interactive
+applications in Common Lisp. The most notable of these is
+[Lispbuilder-SDL](LispbuilderSDL), a wrapper for
+[SDL](https://libsdl.org/), a library commonly used for game
+development. Other packages provide 3D graphics and animation,
+networking, text processing, and other miscellaneous functionality.
 
-# Introduction #
+The packages include:
 
-LISPBUILDER, or Common Lisp Application Builder is a [Common Lisp Gardeners](http://wiki.alu.org/Gardeners_Projects) Project.
+  * Game development:
+    * [lispbuilder-sdl](LispbuilderSDL): for SDL (including support for support libraries SDL_image, etc.)
+    * lispbuilder-openrm: OpenRM 3d scene graph
+    * lispbuilder-cal3d: Cal3d character animation
+    * lispbuilder-opengl: deprecated, use [cl-opengl](https://common-lisp.net/project/cl-opengl/) instead
+      * Note: OpenGL by itself does not provide windowing support; lispbuilder-sdl can be used with cl-opengl to provide windowing support for OpenGL
 
-LISPBUILDER contains several packages that provide the following functionality:
+  * Text processing:
+    * lispbuilder-clawk: an awk-like tool
+    * lispbuilder-lexer: a flex-like lexer
+    * lispbuilder-yacc: a yacc-like parser
+    * lispbuilder-regex: for regular expressions
 
-  * Game development;
-    * [LISPBUILDER-SDL](LispbuilderSDL)
-
-  * Networking
-    * [LISPBUILDER-NET](LispbuilderNet)
+  * Networking:
+    * lispbuilder-net: deprecated, use [usocket](https://common-lisp.net/project/usocket/) instead
 
   * Win32 specific (windows.h)
-    * [LISPBUILDER-WINDOWS](LispbuilderWindows)
+    * lispbuilder-windows
 
-  * Text processing; AWKing, LEXing, YACCing, and REGEXing:
-    * [LISPBUILDER-CLAWK](https://lispbuilder.github.io/documentation/lispbuilder-clawk/index.html)
-    * [LISPBUILDER-LEXER](https://lispbuilder.github.io/documentation/lispbuilder-lexer/index.html)
-    * [LISPBUILDER-REGEX](https://lispbuilder.github.io/documentation/lispbuilder-regex/index.html)
-    * [LISPBUILDER-YACC](https://lispbuilder.github.io/documentation/lispbuilder-yacc/index.html)
+**Note:** The packages above can be used separately. There is no need
+to install all Lispbuilder packages if, for example, you only want
+[lispbuilder-sdl](LispbuilderSDL).
 
-**NOTE**: The packages above can be used separately. There is no need to install all LISPBUILDER packages if, for example, you only want [LISPBUILDER-SDL](LispbuilderSDL).
+# Download & Installation
 
-# Download & Installation #
+All packages can be installed with [Quicklisp](https://www.quicklisp.org/).
 
-The installation instructions for each package are as follows;
+Dependencies for lispbuilder-sdl must be installed separately; see the
+[installation instructions](DownloadInstallationIntro) details.
 
-  * [LISPBUILDER-SDL](LispbuilderSDL)
-  * [LISPBUILDER-NET](LispbuilderNet)
-  * [LISPBUILDER-WINDOWS](LispbuilderWindows)
-  * [AWKing, LEXing, YACCing, and REGEXing]
+# Support
 
-# Support #
-
-[![](http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif)](http://groups.google.com/group/lispbuilder)
-
-**Lispbuilder:** [Visit this group](http://groups.google.com/group/lispbuilder)
-
-# References & Links #
-
-  * [The Application Builder page](http://wiki.alu.org/Application_Builder/) on the ALU's (Association of Lisp Users) wiki.
+  * [Mailing List](http://groups.google.com/group/lispbuilder)
+  * [Issue Tracker](https://github.com/lispbuilder/lispbuilder/issues)
+  * [Pull Requests](https://github.com/lispbuilder/lispbuilder/pulls) are accepted!
