@@ -3,10 +3,10 @@
 The various Lispbuilder libraries depend on their respective C counterparts:
 
   * lispbuilder-sdl depends on [SDL](https://libsdl.org/)
-  * lispbuilder-sdl-gfx depends on SDL_gfx
-  * lispbuilder-sdl-image depends on SDL_image
-  * lispbuilder-sdl-mixer depends on SDL_mixer
-  * lispbuilder-sdl-ttf depends on SDL_ttf
+  * lispbuilder-sdl-gfx depends on [SDL_gfx](http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/)
+  * lispbuilder-sdl-image depends on [SDL_image](https://www.libsdl.org/projects/SDL_image/release-1.2.html)
+  * lispbuilder-sdl-mixer depends on [SDL_mixer](https://www.libsdl.org/projects/SDL_mixer/release-1.2.html)
+  * lispbuilder-sdl-ttf depends on [SDL_ttf](https://www.libsdl.org/projects/SDL_ttf/release-1.2.html)
 
 *Note:* Currently lispbuilder-sdl only supports SDL 1.2. For SDL 2.0
 support, see e.g. [cl-sdl2](https://github.com/lispgames/cl-sdl2).
