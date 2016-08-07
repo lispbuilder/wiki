@@ -22,7 +22,7 @@ The packages include:
       * Note: OpenGL by itself does not provide windowing support; lispbuilder-sdl can be used with cl-opengl to provide windowing support for OpenGL
 
   * Text processing:
-    * lispbuilder-clawk: an awk-like tool
+    * lispbuilder-clawk: an implementation of awk
     * lispbuilder-lexer: a flex-like lexer
     * lispbuilder-yacc: a yacc-like parser
     * lispbuilder-regex: for regular expressions
