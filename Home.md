@@ -11,7 +11,7 @@ networking, text processing, and other miscellaneous functionality.
 The packages include:
 
   * Game development:
-    * [lispbuilder-sdl](LispbuilderSDL): for SDL (including support for support libraries SDL_image, etc.)
+    * [lispbuilder-sdl](LispbuilderSDL): for SDL (including support libraries SDL_image, etc.)
     * lispbuilder-openrm: OpenRM 3d scene graph
     * lispbuilder-cal3d: Cal3d character animation
     * lispbuilder-opengl: deprecated, use [cl-opengl](https://common-lisp.net/project/cl-opengl/) instead
