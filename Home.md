@@ -11,9 +11,13 @@ networking, text processing, and other miscellaneous functionality.
 The packages include:
 
   * Game development:
-    * [lispbuilder-sdl](LispbuilderSDL): for SDL (including support libraries SDL_image, etc.)
-    * lispbuilder-openrm: OpenRM 3d scene graph
-    * lispbuilder-cal3d: Cal3d character animation
+    * [lispbuilder-sdl](LispbuilderSDL): bindings for [SDL](https://libsdl.org/) version 1.2
+      * lispbuilder-sdl-gfx: bindings for [SDL_gfx](http://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/)
+      * lispbuilder-sdl-image: bindings for [SDL_image](https://www.libsdl.org/projects/SDL_image/release-1.2.html)
+      * lispbuilder-sdl-mixer: bindings for [SDL_mixer](https://www.libsdl.org/projects/SDL_mixer/release-1.2.html)
+      * lispbuilder-sdl-ttf: bindings for [SDL_ttf](https://www.libsdl.org/projects/SDL_ttf/release-1.2.html)
+    * lispbuilder-openrm: bindings for [OpenRM](https://sourceforge.net/projects/openrm/) 3D scene graph
+    * lispbuilder-cal3d: bindings for [Cal3D](http://home.gna.org/cal3d/) character animation
     * lispbuilder-opengl: deprecated, use [cl-opengl](https://common-lisp.net/project/cl-opengl/) instead
       * Note: OpenGL by itself does not provide windowing support; lispbuilder-sdl can be used with cl-opengl to provide windowing support for OpenGL
 
