@@ -22,6 +22,12 @@ tracker](https://github.com/lispbuilder/lispbuilder/issues). If you
 have any questions, feel free to discuss issues on the mailing list
 prior to posting.
 
+We're also happy to accept [pull
+requests](https://github.com/lispbuilder/lispbuilder/pulls)! And if
+you are interested in helping out, we're always happy to give pointers
+on [our mailing list](http://groups.google.com/group/lispbuilder) on
+where to start.
+
 # Projects using lispbuilder-sdl
 
   * [Lisp Games Blog](http://lispgamesdev.blogspot.com)
