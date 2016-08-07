@@ -68,7 +68,7 @@ Then try one of the lispbuilder-sdl examples:
 (sdl-examples:mandelbrot)
 ```
 
-# Download and Installation of the Optional Packages #
+# Optional Packages
 
 ## SDL\_gfx
 
