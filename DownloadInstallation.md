@@ -37,9 +37,9 @@ source). This libary must be compiled from source. Find the directory
 `lispbuilder-sdl/cocoahelper` inside your installation directory; cd
 to this directory and type `make`. (XCode is required for this step.)
 
-Whenever you a lispbuilder-sdl application, such as the one below,
-cocoahelper will be loaded automatically. For example, try one of the
-lispbulder-sdl examples:
+Whenever you run a lispbuilder-sdl application, cocoahelper will be
+loaded automatically. For example, try one of the lispbulder-sdl
+examples:
 
 ```
 (ql:quickload :lispbuilder-sdl-examples)
