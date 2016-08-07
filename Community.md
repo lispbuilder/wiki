@@ -1,4 +1,4 @@
-# Mailing Lists #
+# Mailing Lists
 
 There are two mailing lists:
 
@@ -6,19 +6,23 @@ There are two mailing lists:
 
   * [Tracker mailing list](https://groups.google.com/d/forum/lispbuilder-commits) for tracking commits and issues. Recommended for developers.
 
-# Wiki #
+# Wiki
 
-You are [reading it](http://code.google.com/p/lispbuilder/wiki/LispbuilderSDL). Note that wiki is only editable for logged in project members.
+The [wiki](https://github.com/lispbuilder/lispbuilder/wiki) has links
+to installation instructions, how-to guides, and other documentation.
 
-# Chat #
+# Chat
 
 From time to time, project members and other Lisp community members are available on the IRC channel #lisp.
 
-# Bugs and Features #
+# Bugs and Features
 
-Use the [issue tracking system](http://code.google.com/p/lispbuilder/issues/list) to report bugs and request features. Feel free to discuss issues on the mailing list before posting, if you have any questions.
+Please report bugs or request features through the [issue
+tracker](https://github.com/lispbuilder/lispbuilder/issues). If you
+have any questions, feel free to discuss issues on the mailing list
+prior to posting.
 
-# Projects using LISPBUILDER-SDL #
+# Projects using lispbuilder-sdl
 
   * [Lisp Games Blog](http://lispgamesdev.blogspot.com)
   * [Blast Tactics](http://dto.github.com/notebook/blast.html)
