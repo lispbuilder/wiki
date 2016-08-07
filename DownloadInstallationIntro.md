@@ -1,21 +1,38 @@
-# Compatibility #
+# Dependencies
 
-| **Lisp Implementation** | **Win32** | **Linux** | **OS X** | **BSD** | **Comments** |
-|:------------------------|:----------|:----------|:---------|:--------|:-------------|
-| SBCL                    | Yes       | Yes       | Yes      | Yes     | Win32 version is single threaded.|
-| Lispworks               | Yes       | Yes       | Yes      | ??      |              |
-| Allegro                 | Yes       | Yes       | Yes      | ??      |              |
-| CMUCL                   | NA        | Yes       | ??       | ??      |              |
-| CLISP                   | Yes       | Yes       | Yes      | Yes     |              |
-| Clozure CL              | Yes       | Yes       | Yes`*`   | ??      | `*`CCL on OS X requires [a single-threaded build](http://common-lisp.net/project/qitab/) in order to avoid thread safety issues with Cocoa. |
-| ECL                     | Yes       | Yes       | No       | ??      | ECL (CVS as of 2009-08-14) compiles on MinGW. ECL on OS X breaks in cocoahelper. |
+The various Lispbuilder libraries depend on their respective C counterparts:
 
-# Download & Installation for Windows #
+  * lispbuilder-sdl depends on [SDL](https://libsdl.org/)
+  * lispbuilder-sdl-gfx depends on SDL_gfx
+  * lispbuilder-sdl-image depends on SDL_image
+  * lispbuilder-sdl-mixer depends on SDL_mixer
+  * lispbuilder-sdl-ttf depends on SDL_ttf
 
-For newbies, [Lispworks with the Lisp Starter Pack](WindowsLispworks) is suggested.
+*Note:* Currently lispbuilder-sdl only supports SDL 1.2. For SDL 2.0
+support, see e.g. [cl-sdl2](https://github.com/lispgames/cl-sdl2).
 
-See [Windows Installation](WindowsInstallation) for guides to installing other Lisp implementations.
+Detailed instructions for [Windows](WindowsInstallation) and [macOS,
+Linux and BSD](DownloadInstallation) describe OS-specific issues.
 
-# Download & Installation for OS X, Linux and BSD #
+# Installing
 
-The `LISPBUILDER-SDL` packages rely on several external dynamic linked libraries that are not included as part of the `LISPBUILDER-SDL` distribution. These libraries must be installed prior to loading any of the `LISPBUILDER-SDL` packages. Additional information on the dependencies for a package as well as the download & installation procedures are are [described here](DownloadInstallation).
+All packages can be installed with [Quicklisp](https://www.quicklisp.org/). For example:
+
+```
+(ql:quickload :lispbuilder-sdl-examples)
+(sdl-examples:mandelbrot)
+```
+
+# Compatibility
+
+Lispbuilder should be compatible with all modern Common Lisp
+implementations. Lispbuilder has been tested with SBCL, Clozure CL,
+CMUCL, CLISP, ECL, Lispworks, and Allegro.
+
+If you are new to Common Lisp and don't know which implementation to
+choose, try [SBCL](http://sbcl.org/). All the implementations above
+are good choices, but SBCL has a particularly active community.
+
+**Note:** Clozure CL on macOS requires a [single-threaded
+build](https://common-lisp.net/project/qitab/) to avoid thread safety
+issues with Cocoa.
