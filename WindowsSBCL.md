@@ -1,10 +1,9 @@
-
-
-# Overview #
+# Overview
 
 This page describes the installation and configuration of SBCL and LISPBUILDER-SDL for Windows.
 
-# Install  SBCL #
+
+## Install  SBCL
 
 Download [SBCL](http://www.sbcl.org/) for Windows;
 
@@ -18,7 +17,8 @@ Install SBCL to the default directory; from now on this directory will be denote
 
 Note: Here, `[SBCL]` means to insert the installation directory (e.g. "C:\Program Files\Steel Bank Common Lisp\X.Y.Z\"), not the literal text "`[SBCL]`".
 
-# Install CFFI and Dependencies #
+
+## Install CFFI and Dependencies
 
 Download the latest version of [CFFI](http://common-lisp.net/project/cffi/);
 
@@ -41,9 +41,12 @@ Extract these packages to the following directories;
 
 If you do not already have a program which can extract tar.gz files (necessary for extracting the above packages), [7-Zip](http://www.7-zip.org/) is a good option.
 
-# Install LISPBUILDER-SDL and Binaries #
 
-Download `LISPBUILDER-SDL` from [source](http://code.google.com/p/lispbuilder/source/checkout) (requires SVN), or [downloads](http://code.google.com/p/lispbuilder/downloads/list) above. Install to;
+## Install LISPBUILDER-SDL and Binaries
+
+These days, most users will likely download `LISPBUILDER-SDL` via [Quicklisp](https://www.quicklisp.org/beta/).
+
+You can also download `LISPBUILDER-SDL` from [releases page](https://github.com/lispbuilder/lispbuilder/releases). Install to;
 
 ```
 [SBCL]\site\lispbuilder-sdl\
@@ -51,7 +54,7 @@ Download `LISPBUILDER-SDL` from [source](http://code.google.com/p/lispbuilder/so
 
 Download the required SDL binaries;
 
-  * _win32-lispbuilder-sdl-binaries.tgz_ from [downloads](http://code.google.com/p/lispbuilder/downloads/list) above, or
+  * _win32-lispbuilder-sdl-binaries.tgz_ from [releases page](https://github.com/lispbuilder/lispbuilder/releases) above, or
   * SDL from the [official site](http://www.libsdl.org) or another package
 
 Install to the following directory;
@@ -60,7 +63,7 @@ Install to the following directory;
 [SBCL]\site\lispbuilder-sdl\
 ```
 
-# Create an SBCL System Initialization File #
+## Create an SBCL System Initialization File
 
 Create a new `sbclrc` file;
 
@@ -84,7 +87,8 @@ Add the following to the `sbclrc` file above;
 
 Note that you'll have to double up the backslashes in `[SBCL_HOME]` to avoid confusing SBCL.
 
-# Try the Examples #
+
+## Try the Examples
 
 To make sure your configuration works, start SBCL and try one of the examples;
 
@@ -99,7 +103,8 @@ This is SBCL X.Y.Z, an implementation of ANSI Common Lisp.
 * (sdl-examples:mandelbrot)
 ```
 
-# Emacs and SLIME #
+
+## Emacs and SLIME
 
 If you don't already have an editor you use for Lisp code, [Emacs](http://www.gnu.org/software/emacs/) and [SLIME](http://common-lisp.net/project/slime/) are a good combination.
 
